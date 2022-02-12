@@ -1,14 +1,10 @@
 /* стили для index.html */
-.root{
+/* .root{
   --primary-text-color: rgba (0,0,0,0.8)
   --primary-background-color: #ffffff;
   --primary-font-family: Roboto;
   --primary-font-size: 16px;
-  
-}
-/* font-family: 'Raleway', sans-serif;
-
-font-family:  */
+} */
 
 /* #212121
 #FFFFFF
@@ -20,22 +16,116 @@ font-family:  */
 #2F303A
 #ECECEC */
 
-
 body {
-font-family: 'Roboto', sans-serif;;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Roboto', sans-serif;
+  color: rgba(33, 33, 33, 1);
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
-.link:hover {
-  color: #000000;
-}
+/* Кнопкам задана властивість cursor
+ зі значенням pointer. */
 
-.list {
+.nav-list,
+.main-list {
   list-style: none;
 }
+/* header */
+.nav-link {
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: rgba(33, 150, 243, 1);
+}
+.contacts {
+  color: rgba(117, 117, 117, 1);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+.contacts:hover,
+.contacts:focus {
+  color: rgba(33, 150, 243, 1);
+}
 .logo {
-  color: #000000;
+  font-family: Raleway;
+  color: #2196f3;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo:hover,
+.logo:focus {
+  color: rgba(33, 150, 243, 1);
 }
 
+/* hero */
+.hero-title {
+  background-color: #2f303a;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-order-button {
+  font-family: inherit;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 150, 243, 1);
+  font-weight: bold;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-order-button:hover,
+.hero-order-button:focus {
+  color: rgba(33, 150, 243, 1);
+}
+/* main section 1*/
+.no-need {
+  display: none;
+}
+.advantages {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.advantages-description {
+  color: rgba(117, 117, 117, 1);
+  line-height: 24px;
+}
+/* main section 2 */
+.we-do {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* main section 3 */
+.our-team {
+  background-color: rgba(245, 244, 250, 1);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.actors {
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+}
+.actors-roles {
+  color: rgba(117, 117, 117, 1);
+  font-weight: normal;
+  text-align: center;
+}
